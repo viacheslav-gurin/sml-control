@@ -1,4 +1,4 @@
-import React, { useState, useRef, ReactEventHandler } from 'react';
+import React, { useState, useRef } from 'react';
 import { connect } from 'react-redux';
 import { Field, reduxForm, formValueSelector } from 'redux-form';
 import Overlay from 'react-bootstrap/Overlay';
@@ -102,4 +102,3 @@ Control = connect(state => {
 })(Control);
 
 export default Control;
-// ...
