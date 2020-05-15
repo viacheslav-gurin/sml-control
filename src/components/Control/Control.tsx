@@ -102,3 +102,4 @@ Control = connect(state => {
 })(Control);
 
 export default Control;
+// ...
