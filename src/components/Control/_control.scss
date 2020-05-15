@@ -1,0 +1,116 @@
+.salary-control {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.control-title {
+    font-size: 1.2rem;
+    color: #AAAAAA;
+}
+
+small {
+    font-weight: 700;
+    color: #AAAAAA;
+}
+
+form {
+    & .custom-radio .custom-control-input:checked {
+    
+        & ~ .custom-control-label::before {
+            color: #fff;
+            border-color: #AAAAAA;
+            background-color: #fff;
+        }
+        & ~ .custom-control-label::after {
+            background-image: url('../../img/ellipse.svg');
+        }
+    }
+
+    & .custom-control-label::before, .custom-file-label, .custom-select {
+        box-shadow: none !important;
+        outline: none;
+    }
+}
+
+.tooltip.show {
+    opacity: 1;
+}
+
+.tooltip-inner {
+    max-width: 45%;
+    text-align: left;
+    background-color: #5E6CAB;
+    border-radius: 0;
+    font-size: .8rem;
+    font-weight: 700;
+    margin-top: 7.8rem !important;
+    margin-left: -1rem !important;
+    padding: 1rem;
+}
+
+.bs-tooltip-right .arrow {
+    right: 0;
+    border-width: 0.4rem 0.4rem 0.4rem 0;
+    border-right-color: #5E6CAB;
+    margin-top: 7.4rem !important; 
+    margin-left: -.54rem !important;
+    transform: rotate(-45deg) scale(1.7) !important;
+
+    &::before {
+        border-right-color: #5E6CAB;
+    }
+}
+
+.ml {
+    margin-left: .4rem;
+}
+
+.control-title {
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+.small-icon {
+    font-size: 1.1rem;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #AAAAAA;
+    transition: color .3s ease-out;
+
+    &:hover {
+        color: #5E6CAB;
+    }
+}
+
+.vertically-aligned {
+    position: relative;
+    display: flex;
+    align-items: center;    
+}
+
+.toggle-icon {
+
+    margin-left: .3rem;
+    appearance: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    mask: url('../../img/info-black-18dp.svg');
+    mask-size: auto;
+    background: #000;
+    cursor: pointer;
+
+    &:checked {
+        mask: url('../../img/highlight_off-24px.svg');
+        background: #000;
+        mask-size: 95%;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background: #5E6CAB;
+    }
+
+}
